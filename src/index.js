@@ -23,7 +23,7 @@ const launchGame = (task, generateQuestionAndRightAnswer = null) => {
   console.log(task);
 
   for (let i = 0; i < RIGHT_ANSWERS_TO_WIN; i += 1) {
-    const [question, rightAnswer] = generateQuestionAndRightAnswer;
+    const [question, rightAnswer] = generateQuestionAndRightAnswer();
 
     console.log(question);
 
@@ -32,8 +32,8 @@ const launchGame = (task, generateQuestionAndRightAnswer = null) => {
     if (usersAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}`);
-      console.log(`Let's try again, ${name}`);
+      console.log(`"${usersAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
