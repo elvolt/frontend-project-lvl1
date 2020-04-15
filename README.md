@@ -8,3 +8,23 @@
 <a href="https://ru.hexlet.io/professions/frontend">профессии "Фронтенд JavaScript" в школе Хекслет</a>.
 
 Проект представляет собой набор мини-игр, запускаемых из консоли.
+
+## Установка
+
+```bash
+sudo npm link
+```
+[![asciicast](https://asciinema.org/a/e6YrI5Dvoc4yUaTk2fFdqFtnE.svg)](https://asciinema.org/a/e6YrI5Dvoc4yUaTk2fFdqFtnE)
+
+
+
+## Как играть
+
+### Игра: "Проверка на чётность"
+
+Пользователю показывается случайное число. Ему нужно ответить yes, если число чётное, или no — если нечётное.
+```bash
+brain-even
+```
+
+[![asciicast](https://asciinema.org/a/7PaHK4gIg5Z2VVrzK8vP98IsU.svg)](https://asciinema.org/a/7PaHK4gIg5Z2VVrzK8vP98IsU)
