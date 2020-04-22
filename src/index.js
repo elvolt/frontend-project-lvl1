@@ -9,6 +9,8 @@ export const greeting = () => {
   console.log(`Hello, ${name}!`);
 };
 
+// Максимум и минимум включаются
+export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const launchGame = (task, generateQuestionAndRightAnswer = null) => {
   console.log('Welcome to the Brain Games!');
@@ -25,7 +27,7 @@ const launchGame = (task, generateQuestionAndRightAnswer = null) => {
   for (let i = 0; i < RIGHT_ANSWERS_TO_WIN; i += 1) {
     const [question, rightAnswer] = generateQuestionAndRightAnswer();
 
-    console.log(question);
+    console.log(`Question: ${question}`);
 
     const usersAnswer = readlineSync.question('Your answer: ');
 
@@ -38,7 +40,7 @@ const launchGame = (task, generateQuestionAndRightAnswer = null) => {
     }
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default launchGame;
