@@ -49,3 +49,10 @@ $ brain-gcd
 [![asciicast](https://asciinema.org/a/jwJtwbX8prqbXhmt6bn0F4MtJ.svg)](https://asciinema.org/a/jwJtwbX8prqbXhmt6bn0F4MtJ)
 
 
+### Игра "Арифметическая прогрессия"
+Игроку показывается ряд чисел, образующий арифметическую прогрессию, в которой пропущено одно число. Игрок должен определить это число
+```bash
+$ brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/4btAF4ZPi45WbnioX7fXdL0gn.svg)](https://asciinema.org/a/4btAF4ZPi45WbnioX7fXdL0gn)
