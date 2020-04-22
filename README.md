@@ -38,3 +38,14 @@ $ brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/x7iLgk3NTHpPQr3sMlkw0KBKZ.svg)](https://asciinema.org/a/x7iLgk3NTHpPQr3sMlkw0KBKZ)
+
+
+### Игра "Наибольший общий делитель (НОД)"
+Игроку показываются два случайных числа. Нужно вычислить и ввести наибольший общий делитель этих чисел.
+```bash
+$ brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/jwJtwbX8prqbXhmt6bn0F4MtJ.svg)](https://asciinema.org/a/jwJtwbX8prqbXhmt6bn0F4MtJ)
+
+
