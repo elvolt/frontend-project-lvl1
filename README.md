@@ -56,3 +56,12 @@ $ brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/4btAF4ZPi45WbnioX7fXdL0gn.svg)](https://asciinema.org/a/4btAF4ZPi45WbnioX7fXdL0gn)
+
+
+### Игра "Простое ли число?"
+Игроку показывается случайное число. Нужно ответить yes, если число простое, или no — если нет
+```bash
+$ brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/1ih7nNukPjvlBOiYCCxkNMy5Z.svg)](https://asciinema.org/a/1ih7nNukPjvlBOiYCCxkNMy5Z)
