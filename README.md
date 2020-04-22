@@ -12,7 +12,7 @@
 ## Установка
 
 ```bash
-sudo npm link
+$ sudo npm link
 ```
 [![asciicast](https://asciinema.org/a/e6YrI5Dvoc4yUaTk2fFdqFtnE.svg)](https://asciinema.org/a/e6YrI5Dvoc4yUaTk2fFdqFtnE)
 
@@ -24,7 +24,17 @@ sudo npm link
 
 Пользователю показывается случайное число. Ему нужно ответить yes, если число чётное, или no — если нечётное.
 ```bash
-brain-even
+$ brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/7PaHK4gIg5Z2VVrzK8vP98IsU.svg)](https://asciinema.org/a/7PaHK4gIg5Z2VVrzK8vP98IsU)
+
+
+### Игра: "Калькулятор"
+
+Игроку показывается случайное математическое выражение, результат которого нужно вычислить.
+```bash
+$ brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/x7iLgk3NTHpPQr3sMlkw0KBKZ.svg)](https://asciinema.org/a/x7iLgk3NTHpPQr3sMlkw0KBKZ)
