@@ -23,7 +23,7 @@ const generateQuestionAndRightAnswer = () => {
   const question = getRandomInt(MIN_NUM, MAX_NUM);
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
 
-  return [question, rightAnswer];
+  return [String(question), rightAnswer];
 };
 
 const run = () => launchGame(TASK, generateQuestionAndRightAnswer);
