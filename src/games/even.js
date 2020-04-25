@@ -1,4 +1,5 @@
-import launchGame, { getRandomInt } from '../index.js';
+import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const MAX_NUM = 100;
 const MIN_NUM = 0;

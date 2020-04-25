@@ -1,4 +1,5 @@
-import launchGame, { getRandomInt } from '../index.js';
+import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const OPERATORS = ['+', '-', '*'];
 const TASK = 'What is the result of the expression?';

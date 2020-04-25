@@ -1,4 +1,5 @@
-import launchGame, { getRandomInt } from '../index.js';
+import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const TASK = 'What number is missing in the progression?';
 const PROGRESSION_SIZE = 10;
