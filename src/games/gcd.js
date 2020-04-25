@@ -2,16 +2,15 @@ import launchGame from '../index.js';
 import getRandomInt from '../utils.js';
 
 const TASK = 'Find the greatest common divisor of given numbers.';
-const MIN_NUM = 1;
+const MIN_NUM = 0;
 const MAX_NUM = 100;
 
-
 const getGcd = (num1, num2) => {
-  const max = Math.max(num1, num2);
-  const min = Math.min(num1, num2);
+  if (num2 === 0) {
+    return num1;
+  }
 
-  const reminder = max % min;
-  return (reminder === 0) ? min : getGcd(min, reminder);
+  return getGcd(num2, num1 % num2);
 };
 
 const generateQuestionAndRightAnswer = () => {
