@@ -6,19 +6,25 @@ const PROGRESSION_SIZE = 10;
 const MIN_NUM = 1;
 const MAX_NUM = 100;
 
-const generateQuestionAndRightAnswer = () => {
-  const firstElement = getRandomInt(MIN_NUM, MAX_NUM);
-  const step = getRandomInt(MIN_NUM, MAX_NUM);
-
+const getProgression = (firstMember, step, size) => {
   const progression = [];
-  for (let i = firstElement, count = 1; count <= PROGRESSION_SIZE; i += step, count += 1) {
-    progression.push(i);
+  for (let i = 0; i < size; i += 1) {
+    const member = firstMember + i * step;
+    progression.push(member);
   }
 
-  const hiddenElementIndex = getRandomInt(0, PROGRESSION_SIZE - 1);
+  return progression;
+};
 
+const generateQuestionAndRightAnswer = () => {
+  const firstMember = getRandomInt(MIN_NUM, MAX_NUM);
+  const step = getRandomInt(MIN_NUM, MAX_NUM);
+  const progression = getProgression(firstMember, step, PROGRESSION_SIZE);
+
+  const hiddenElementIndex = getRandomInt(0, PROGRESSION_SIZE - 1);
   const rightAnswer = progression[hiddenElementIndex];
   progression[hiddenElementIndex] = '..';
+
   const question = progression.join(' ');
 
   return [question, String(rightAnswer)];
