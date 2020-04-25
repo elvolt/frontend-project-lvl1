@@ -9,7 +9,8 @@ const MAX_NUM = 100;
 const generateQuestionAndRightAnswer = () => {
   const operand1 = getRandomInt(MIN_NUM, MAX_NUM);
   const operand2 = getRandomInt(MIN_NUM, MAX_NUM);
-  const operator = OPERATORS[Math.floor(Math.random() * OPERATORS.length)];
+  // const operator = OPERATORS[Math.floor(Math.random() * OPERATORS.length)];
+  const operator = OPERATORS[getRandomInt(0, OPERATORS.length - 1)];
 
   let rightAnswer = 0;
   switch (operator) {
