@@ -17,13 +17,12 @@ const launchGame = (task, generateQuestionAndRightAnswer) => {
 
     const usersAnswer = readlineSync.question('Your answer: ');
 
-    if (usersAnswer === rightAnswer) {
-      console.log('Correct!');
-    } else {
+    if (usersAnswer !== rightAnswer) {
       console.log(`"${usersAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${name}!`);
