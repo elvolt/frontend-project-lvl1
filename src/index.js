@@ -2,25 +2,11 @@ import readlineSync from 'readline-sync';
 
 const RIGHT_ANSWERS_TO_WIN = 3;
 
-export const greeting = () => {
+const launchGame = (task, generateQuestionAndRightAnswer) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-};
-
-// Максимум и минимум включаются
-export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const launchGame = (task, generateQuestionAndRightAnswer = null) => {
-  console.log('Welcome to the Brain Games!');
-
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-
-  if (generateQuestionAndRightAnswer === null) {
-    return;
-  }
 
   console.log(task);
 
@@ -31,13 +17,12 @@ const launchGame = (task, generateQuestionAndRightAnswer = null) => {
 
     const usersAnswer = readlineSync.question('Your answer: ');
 
-    if (usersAnswer === rightAnswer) {
-      console.log('Correct!');
-    } else {
+    if (usersAnswer !== rightAnswer) {
       console.log(`"${usersAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${name}!`);

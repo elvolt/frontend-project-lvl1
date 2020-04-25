@@ -1,4 +1,5 @@
-import launchGame, { getRandomInt } from '../index.js';
+import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const MIN_NUM = 1;
@@ -22,7 +23,7 @@ const generateQuestionAndRightAnswer = () => {
   const question = getRandomInt(MIN_NUM, MAX_NUM);
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
 
-  return [question, rightAnswer];
+  return [String(question), rightAnswer];
 };
 
 const run = () => launchGame(TASK, generateQuestionAndRightAnswer);
