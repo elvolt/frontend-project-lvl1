@@ -9,18 +9,11 @@ export const greeting = () => {
   console.log(`Hello, ${name}!`);
 };
 
-// Максимум и минимум включаются
-export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const launchGame = (task, generateQuestionAndRightAnswer = null) => {
+const launchGame = (task, generateQuestionAndRightAnswer) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-
-  if (generateQuestionAndRightAnswer === null) {
-    return;
-  }
 
   console.log(task);
 
